@@ -23,7 +23,6 @@
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--text-weight);
 }
 
 .header {
@@ -72,7 +71,7 @@
 }
 
 .card__title {
-  padding: 4px 10px 5px;
+  padding: 4px 10px;
   font-variation-settings: "wght" var(--title-weight);
   font-size: 18px;
 }
@@ -81,8 +80,6 @@
   display: block;
   inline-size: var(--block-size);
   max-width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
   overflow: hidden;
 }
 

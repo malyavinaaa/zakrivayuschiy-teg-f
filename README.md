@@ -1,1 +1,1 @@
-https://github.com/malyavinaaa/slozhno-sosredotochitsya-fd.git
+https://github.com/malyavinaaa/zakrivayuschiy-teg-f.git
