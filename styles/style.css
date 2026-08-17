@@ -20,6 +20,7 @@
   font-size: 18px;
   font-variation-settings: "wght" var(--text-weight);
   background-image: var(--background-gradient);
+  background-attachment: fixed;
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -32,7 +33,6 @@
   padding: clamp(122px, 7.45rem + 0.75vw, 130px) 0;
   outline: var(--border);
   font-family: var(--font-family-accent);
-  font-style: var(--font-family-accent);
   text-align: center;
   background-color: var(--background-color);
   inline-size: var(--block-size);
@@ -117,6 +117,8 @@
 
 .image-label__container {
   position: relative;
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 .image-label {
@@ -249,14 +251,21 @@
   align-items: center;
   gap: 30px 20px;
   border: var(--border);
-  padding: 30px;
-  min-inline-size: 341px;
+  padding: 28px;
   max-inline-size: 353px;
+}
+
+.page:has(dialog[open]) .main {
+  gap: 70px;
 }
 
 .ok-button {
   grid-column: span 2;
   height: 38px;
+}
+
+.ok-button span {
+  text-transform: uppercase;
 }
 
 .pop-up__text {
@@ -343,10 +352,6 @@ dialog::backdrop {
     gap: 100px;
   }
 
-  .card__title {
-    border-bottom: var(--border);
-  }
-
   .header {
     outline-offset: -2px;
   }
@@ -361,7 +366,12 @@ dialog::backdrop {
   }
 
   .pop-up[open] {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
+    max-inline-size: 341px;
+  }
+
+  .page:has(dialog[open]) .main {
+    gap: 50px;
   }
 }
